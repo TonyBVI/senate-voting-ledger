@@ -1,0 +1,21 @@
+
+openapi: 3.0.0
+info:
+  title: Senate Voting Ledger API
+  version: 1.0.0
+paths:
+  /senators:
+    get:
+      summary: List senators
+  /senators/{id}:
+    get:
+      summary: Get senator profile
+  /senators/{id}/votes:
+    get:
+      summary: Senator voting history
+  /votes/{vote_number}:
+    get:
+      summary: Vote detail
+  /matrix:
+    get:
+      summary: Voting matrix
